@@ -1,16 +1,10 @@
-"use client"
 
 
 import './globals.css'
 
-import NavBar from '../../Components/utils/NavBar'
-import Footer from '../../Components/utils/Footer'
-// import { ThemeProvider } from 'next-themes'
-
-
 
 export const metadata = {
-  title: 'search jobs in sudan',
+  title: 'Mayar Sakar',
   description:'developed by hassan ',
 }
 
@@ -29,12 +23,12 @@ export default function RootLayout({ children }) {
 
       <body>
 
-    <NavBar/>
+ 
   
       <main>
       {children}
       </main>
-      <Footer/>
+
      
       </body>
    

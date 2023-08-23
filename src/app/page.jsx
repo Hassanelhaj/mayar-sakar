@@ -12,6 +12,8 @@ import Contact from '../../Components/contactPage/Contact';
 import ClientsList from '../../Components/clients/ClientsList';
 import { clients } from '../../Data';
 import ProjectsList from '../../Components/projects/ProjectsList';
+import NavBar from '../../Components/utils/NavBar';
+import Footer from '../../Components/utils/Footer';
 
 
 
@@ -22,7 +24,8 @@ const Home = () => {
   if(!mounted)return null;
  
   return (
-    <main className='overflow-hidden'>
+    <main className='overflow-hidden flex felx-col gap-0'>
+      <NavBar/>
     <div className=' p-4 w-screen  min-h[96dvh]
    ' >
     <div className=' overflow-hidden'>
@@ -63,6 +66,7 @@ const Home = () => {
     </main>
     </div>
     </div>
+    <Footer/>
     </main>
   )
 }
