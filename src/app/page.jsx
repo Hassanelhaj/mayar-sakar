@@ -24,7 +24,7 @@ const Home = () => {
   if(!mounted)return null;
  
   return (
-    <main className='overflow-hidden flex felx-col gap-0'>
+    <main className='overflow-hidden flex flex-col gap-0'>
       <NavBar/>
     <div className=' p-4 w-screen  min-h[96dvh]
    ' >
