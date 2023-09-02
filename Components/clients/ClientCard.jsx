@@ -6,7 +6,7 @@ import img from '../../public/imgs/clients/c2.webp'
 
 const ClientCard = ({data}) => {
   return (
-    <main className=' bg-white p-3 max-w-[240px] rounded-lg shadow-lg h-[260px]
+    <main className=' bg-white p-3 w-[260px] rounded-lg shadow-lg h-[270px]
     flex flex-col justify-center items-center gap-2 first-letter'>
         <section className='flex flex-col justify-center items-center gap-2'>
             <Image src= {  img}  className='w-24 h-24 rounded-full' />

@@ -12,7 +12,7 @@ const Footer = () => {
               <Link href="/" className="flex items-center gap-2">
                 <HiCode className="text-3xl text-gray-400" />
                   <span className="self-center text-2xl font-semibold whitespace-nowrap
-                   text-gray-400">SPIRAL CODE</span>
+                   text-gray-400">HASSAN</span>
               </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

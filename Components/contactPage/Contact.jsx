@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contact = () => {
+  const [lable,setLable] = useState(null)
+  const handleSend = ()=>{
+    setLable('you request is under proccess');
+    setTimeout(()=>{setLable('')},4000)
+  }
   return (
     <div className=" flex flex-col items-center w-fit bg-white
      justify-center gap-3 p-6 
@@ -39,8 +44,13 @@ const Contact = () => {
         />
       </div>
     
-      <p className=" bg-purple-700 poster  cursor-pointer text-white
+      <p onClick={handleSend} className=" bg-purple-700 poster  cursor-pointer text-white
        font-medium py-2 w-64 sm:w-72 text-center rounded-lg text-transparent">Send</p>
+       {
+        lable &&
+       <p className='text-purple-700 font-semibold text-sm p-3 bg-purple-200 rounded-lg mt-2'>{lable}</p>
+
+       }
     </div>
 
 
